@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-content {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+/* PAGE 1 - YEAR CHALLENGE */
+.page-1 {
+    background: linear-gradient(135deg, #fdf6f0 0%, #f5e6d3 100%);
+}
+
+.hello-text {
+    font-size: 50px;
+    font-weight: 500;
+    color: #d4a574;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-family: 'BaksoMenu TTF', sans-serif;
+}
+.people-text{
+    font-family:'adelia';
+    font-size:110px;
+    color:#002D5B;
+    line-height:0.9;
+    margin-top:-30px;
+    margin-bottom:50px;
+}
+
+@font-face {
+    font-family: 'BaksoMenu TTF';
+    src: url('./Fonts/BaksoMenu TTF') format('truetype');
+   
+}
+
+.year-number {
+    font-family: 'BaksoMenu TTF', serif !important;
+}
+
+.challenge-text {
+    font-size: 24px;
+    color: #6b5b4a;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.year-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.year-option {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.year-number {
+    display: inline-block;
+    font-family: 'BaksoMenu TTF' !important;
+    font-size: 50px;
+    font-weight: normal !important;
+    color: #8b7355;
+    padding: 20px 30px;
+    border: 3px solid #d4a574;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.year-option:hover .year-number {
+    background: #d4a574;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(212, 165, 116, 0.3);
+}
+
+.instruction-text {
+    font-size: 18px;
+    color: #6b5b4a;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.type-year-btn {
+    background:#002D5B;
+    color: #fff;
+    border: none;
+    padding: 15px 45px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.type-year-btn:hover {
+    background: #b8865c;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(212, 165, 116, 0.4);
+}
+
+.type-year-btn:active {
+    transform: translateY(0);
+}
+
+/* PAGE 2 - MAIN CELEBRATION */
+.page-2 {
+    background: #002D5B;
+}
+
+.milestone-text {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.age-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.age-number {
+    font-size: 120px;
+    font-weight: 800;
+    color: #d4a574;
+    line-height: 1;
+    font-family: 'BaksoMenu TTF', 'Poppins', sans-serif;
+}
+
+.age-word {
+    font-size: 32px;
+    color: #8b7355;
+    font-weight: 600;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.age-label {
+    font-size: 20px;
+    color: #d4a574;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.celebration-info {
+    margin-top: 40px;
+}
+
+.intro-text {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 250;
+    margin-bottom: 15px;
+}
+
+.birthday-person {
+    font-size: 80px;
+    font-weight: 300;
+    color: #ffd6a1;
+    margin-bottom: 10px;
+    font-family: 'Hello', sans-serif;
+}
+
+.event-details {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.location {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6b5b4a;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.location-link {
+    color: #d4a574;
+    text-decoration: none;
+    border-bottom: 2px solid #d4a574;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.location-link:hover {
+    color: #b8865c;
+    border-bottom-color: #b8865c;
+}
+
+.date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+    color: #8b7355;
+    font-weight: 600;
+}
+
+.month {
+    color: #d4a574;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.day {
+    color: #8b7355;
+}
+
+.time {
+    color: #d4a574;
+    font-weight: 700;
+}
+
+.year {
+    font-size: 18px;
+    font-weight: 800;
+    color: #8b7355;
+}
+
+.birthday-name {
+    font-family: 'Your Font', cursive;
+    font-size: 48px;
+    color: #d8a25d;
+}
+
+/* Add this at the bottom */
+@media (max-width: 768px) {
+    .birthday-name {
+        font-size: 58px;
+    }
+}
+
+/* PAGE 3 - EVENT SCHEDULE */
+.page-3 {
+    background: linear-gradient(135deg, #f5e6d3 0%, #ede0d0 100%);
+}
+
+.schedule-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #8b7355;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.schedule-subtitle {
+    font-size: 16px;
+    color: #6b5b4a;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.schedule-items {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(10px);
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(212, 165, 116, 0.2);
+    transition: all 0.3s ease;
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-item:hover {
+    background: rgba(212, 165, 116, 0.1);
+    padding: 20px 15px;
+    border-radius: 8px;
+}
+
+.schedule-time {
+    font-size: 18px;
+    font-weight: 700;
+    color: #d4a574;
+    min-width: 150px;
+    text-align: left;
+}
+
+.schedule-event {
+    font-size: 16px;
+    color: #6b5b4a;
+    font-weight: 600;
+    text-align: right;
+    flex: 1;
+}
+
+.dont-miss {
+    font-size: 13px;
+    color: #d4a574;
+    font-weight: 600;
+    display: block;
+    margin-top: 5px;
+}
+
+
+RESPONSIVE DESIGN
+@media (max-width: 768px) {
+    .hello-text {
+        font-size: 48px;
+    }
+
+    .age-number {
+        font-size: 80px;
+    }
+
+        .year-options {
+        gap: 10px;
+    }
+
+    .year-number {
+        font-size: 36px;
+        padding: 15px 20px;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .schedule-event {
+        text-align: left;
+    }
+
+    .date {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .page {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hello-text {
+        font-size: 36px;
+    }
+
+    .age-number {
+        font-size: 60px;
+    }
+
+    .birthday-person {
+        font-size: 28px;
+    }
+
+    .year-options {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .schedule-title {
+        font-size: 32px;
+    }
+
+    .event-details {
+        padding: 20px;
+    }
+
+    .schedule-items {
+        padding: 20px;
+    }
+}
+
+
+.birthday-invitation {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.birthday-invitation img {
+    width: 100%;
+    max-width: 900px;
+    height: 20px;
+}
+
+.location-btn {
+    margin: 30px 0 60px;
+}
+
+.location-btn a {
+    display: inline-block;
+    background: #d4a574;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.location-btn a:hover {
+    transform: scale(1.05);
+}
+
+.hero-70 {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.celebration-header img {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: -40px auto -60px auto;
+}
+
+.milestone-text,
+.fabulous-years {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.event-date img {
+    width: 500px;
+    max-width: 90%;
+    display: block;
+    margin: 10px auto;
+}
+
+.venue-details {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* .venue-details h3 {
+    color: #d9ab78;
+    font-size: 18px;
+    margin-bottom: 8px;
+} */
+
+.venue-details p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* ===== Version 2 Responsive Improvements ===== */
+@font-face{font-family:'BaksoMenu TTF';src:url('Fonts/BaksoMenu%20TTF.ttf') format('truetype');font-display:swap;}
+@font-face{font-family:'Hello';src:url('Fonts/Hello.ttf') format('truetype');font-display:swap;}
+@font-face{font-family:'adelia';src:url('Fonts/adelia.ttf') format('truetype');font-display:swap;}
+
+@media (max-width:768px){
+.page{padding:20px 16px;}
+.page-content{max-width:100%;}
+.people-text{font-size:72px;margin-bottom:24px;}
+.hello-text{font-size:38px;}
+.challenge-text{font-size:18px;margin-top:40px;margin-bottom:24px;}
+.year-options{gap:12px;justify-content:center;}
+.year-number{font-size:34px;padding:14px 18px;}
+/* .celebration-header img,.event-date img{width:100%;max-width:360px;height: 50%;;margin: 20px;;} */
+.birthday-person{font-size:46px;}
+.intro-text,.milestone-text,.fabulous-years{font-size:16px;}
+}
+@media (max-width:480px){
+.people-text{font-size:56px;}
+.year-options{flex-direction:row;gap:8px;}
+.year-number{font-size:28px;padding:10px 12px;}
+.type-year-btn{width:100%;max-width:260px;}
+.birthday-person{font-size:36px;}
+}
+
+/* Mobile spacing fix for invitation header */
+@media (max-width: 768px){
+  .milestone-text{
+    margin-top: 10px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .celebration-header img{
+    max-width: 320px;
+    /* margin: -20px auto -20px auto !important; */
+  }
+
+  .fabulous-years{
+    margin-top: 8px !important;
+    margin-bottom: 16px !important;
+  }
+}
+
+/* ===== Mobile Only ===== */
+@media (max-width: 768px) {
+
+       .milestone-text {
+        margin-top: 10px !important;
+        margin-bottom: 8px !important;
+    }
+.celebration-header img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+    /* .fabulous-years {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    } */
+
+    /* Make "Jyoti's Birthday" bigger */
+    .birthday-person {
+        font-size: 54px !important;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    /* If you're using this class instead */
+    .birthday-name {
+        font-size: 64px !important;
+        line-height: 1.1;
+    }
+}
+
+
+/* layout fix */
+.celebration-header img{display:block;width:100%;height:auto;margin:0 auto;}
+.celebration-header img:first-child{max-width:500px;}
+.celebration-header img:nth-child(2){max-width:500px;margin-top:20px;}
+.celebration-header img:nth-child(3){max-width:500px;margin-top:20px;}
+@media(max-width:768px){
+.page-content{padding:0 16px;}
+.celebration-header img:first-child{max-width:320px;}
+.celebration-header img:nth-child(2){max-width:320px;margin-top:12px;}
+.celebration-header img:nth-child(3){max-width:320px;margin-top:12px;}
+}
+@media (max-width: 768px) {
+
+    .celebration-header img{
+        width: 100%;
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* .celebration-info{
+        margin-top: -40px !important;
+    } */
+
+    .fabulous-years{
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width:768px){
+
+    .hero-70{
+        margin-bottom:20px !important;
+    }
+
+    .celebration-info{
+        margin-top:20px !important;
+    }
+
+}
